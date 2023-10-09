@@ -1,0 +1,115 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: red;
+}
+#left{
+    position: relative;
+    width: 40%;
+    height: 100%;
+    background-color: white;
+}
+#lnav{
+    display:flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 30px;
+}
+#lnavr{
+    display: flex;
+    align-items: center;
+}
+
+#lnavr a{
+    margin-right: 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 14px;
+}
+#lnavr i{
+    color: black;
+}
+#left #textcenter{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#textcenter h1{
+    font-size: 90px;
+    font-weight: 900;
+}
+#textcenter p{
+    opacity: .6;
+    font-size: 12px;
+    line-height: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#textcenter a{
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+    font-size: 13px;
+    font-weight: 600;
+    opacity: .6;
+}
+#right{
+    width: 60%;
+    height: 100%;
+    background-color: purple;
+}
+#rtop{
+    display: flex;
+    width: 100%;
+    height: 50%;
+    background-color: orangered;
+}
+#rtopleft{
+    width: 50%;
+    height: 100%;
+    background-image: url(https://images.unsplash.com/photo-1592918489661-b098eb4e343c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80);
+    background-size: cover;
+    background-position: center;
+}
+#rtopright{
+    width: 50%;
+    height: 100%;
+    background-image: url(https://media.istockphoto.com/id/1348885590/photo/female-hands-cutting-strawberries.jpg?s=1024x1024&w=is&k=20&c=v3PBRTplEd-aciN6vUKELuovx3oqt4oqOCmK8-wv8Q0=);
+    background-size: cover;
+    background-position: center;
+}
+#rbottom{
+    width: 100%;
+    height: 50%;
+    background-image: url(https://media.istockphoto.com/id/1249835165/photo/young-woman-pouring-strawberry-milkshake-from-blender.jpg?s=1024x1024&w=is&k=20&c=IXTMn0OtKm5cNIKZMGnKewf-m7N2Aejk7OznFwqrTZk=);
+    background-size: cover;
+    background-position: center;
+}
+
+@media( max-width: 500px){
+    #main{
+        flex-direction: column;
+    }
+    #main #left{
+        width: 100%;
+    }
+    #main #right{
+        width: 100%;
+    }
+
+}
